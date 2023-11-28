@@ -22,6 +22,9 @@
             class="form-control validate-input"
             type="text"
             name="first-name"
+            required
+            minlength="1"
+            maxlength="15"
             
           />
           <small class="error" aria-live="polite"></small>
@@ -34,6 +37,9 @@
             class="form-control validate-input"
             type="text"
             name="last-name"
+            required
+            minlength="1"
+            maxlength="20"
             
           />
           <small class="error" aria-live="polite"></small>
@@ -46,6 +52,10 @@
             class="form-control validate-input"
             type="email"
             name="email"
+            placeholder="@uw.edu"
+            required
+            pattern=".+@uw.edu"
+            
           />
           <small class="error" aria-live="polite"></small>
         </div>
@@ -75,7 +85,7 @@
 
         <div class="form-group">
           <label for="doge">How much DogeCoin u donate me?</label>
-          <input type="number" id="doge" min=20>
+          <input type="number" id="doge" min=10 max="1000">
         </div>
 
         <div class="form-group">
